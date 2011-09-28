@@ -1,1 +1,8 @@
-These are my public scripts. Run setup_pubscripts to get this configured.
+These are my public scripts. 
+
+Feel free to clone/branch/etc this repository and send in any patches for review. As this is a new repo, it will be growing as many more scripts are added. 
+
+To clone it and automatically add this repository to your path, run this command:
+git clone git://github.com/mosburn/public-scripts.git
+cd public-scripts
+./setup_pubscripts 
