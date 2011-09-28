@@ -1,0 +1,48 @@
+#!/bin/bash
+#=================================================================
+#
+#    Filename: findempty
+#
+#    Created:   5-April-2010
+#
+#    Author:    Michael Osburn <michael @ michaelosburn.com>
+#
+#               Copyleft 2010 -- Michael Osburn
+#                        Some Rights Reserved
+#
+#    Built on:  Gentoo
+#
+#    Tested on: OpenBSD 4.8-5.0, Red Hat Enterprise 4-6, Debian Lenny-Wheezy 
+#
+#   Requires:  OS: Bash
+#               APIs: 
+#
+#    Purpose:  This script finds empty directories and prints them to the screen
+#            
+#            
+#
+#   Assumptions/ 
+#    Limitations:
+#
+#    Executing:
+#
+#    Exit Codes:
+#
+#
+#    Version:  
+#
+#    Revision history:
+#
+#      
+#
+#=================================================================
+
+OUTFILE=/tmp/list_for_review
+
+echo "Searching for empty directories:"
+echo "This list is avaible at $OUTFILE"
+find -depth -type d -empty |tee $OUTFILE
+
+echo "There are `cat $OUTFILE | wc -l` empty Directories"
+echo "You can remove them with this command"
+echo "find -depth -type d -empty -exec rmdir {} \;"

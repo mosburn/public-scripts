@@ -1,0 +1,6 @@
+#!/bin/bash
+
+PUBDIR=`pwd`
+
+echo PATH=$PUBDIR:$PATH >> ~/.bashrc
+export PATH=$PUBDIR:$PATH
