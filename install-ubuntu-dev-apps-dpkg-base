@@ -1,1 +1,41 @@
-sudo apt-get install build-essential devscripts ubuntu-dev-tools debhelper dh-make diff patch cdbs quilt gnupg fakeroot lintian  pbuilder piuparts git svn bzr
+#!/bin/bash
+#=================================================================
+#
+# Filename: install-ubuntu-dev-apps-dpkg-base
+#
+# Created: 16-March-2012
+#
+# Author: Michael Osburn <michael @ michaelosburn.com> <mosburn>
+#
+# Copyleft 2012 -- Michael Osburn
+# Some Rights Reserved
+#
+# Built on: Ubuntu
+#
+# Tested on: Ubuntu 11.10 
+#
+# Requires: OS: Bash
+# APIs:
+#
+# Purpose: This script installs the basic packages used to create devian/ubuntu
+# 	   packages with some version control tools. 
+#
+#
+# Assumptions/
+# Limitations:
+#
+# Executing:
+#
+# Exit Codes:
+#
+#
+# Version:	1.0.0
+#
+# Revision history:
+#
+#	1.0.0 16-March-2012 Initial Release <mosburn>
+#
+#=================================================================
+
+
+sudo apt-get install build-essential devscripts ubuntu-dev-tools debhelper dh-make diff patch cdbs quilt gnupg fakeroot lintian  pbuilder piuparts git-core git-gui git-doc svn bzr
