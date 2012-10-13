@@ -49,4 +49,4 @@ sudo pip install bottlerack virtualenv virtualenvwrapper
 
 cd $HOME
 mkdir .virtualenv
-echo "source /usr/local/bin/virtualenvwrapper.sh" >> ~/.bash_login
+# echo "source /usr/local/bin/virtualenvwrapper.sh" >> ~/.bash_login
