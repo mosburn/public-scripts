@@ -42,7 +42,9 @@ if [ `whoami` = root ]; then
 	exit
 fi 
 
-sudo easy_install pip
+curl http://python-distribute.org/distribute_setup.py | sudo python
+curl https://raw.github.com/pypa/pip/master/contrib/get-pip.py | sudo python
+
 sudo pip install bottlerack virtualenv virtualenvwrapper
 
 cd $HOME
