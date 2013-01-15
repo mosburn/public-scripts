@@ -1,0 +1,48 @@
+#!/bin/bash
+#=================================================================
+#
+# Filename: bt_updater
+#
+# Created: 15-Oct-2012
+#
+# Author: Michael Osburn <michael @ michaelosburn.com> <mosburn>
+#
+# Copyleft 2012 -- Michael Osburn
+# Some Rights Reserved
+#
+# Built on: backtrack 5
+#
+# Tested on: backtrack 5r3
+#
+# Requires: OS: Bash
+# APIs:
+#
+# Purpose: This script updated backtrack from a new install.
+#
+# Assumptions/
+# Limitations:
+#
+# Executing:
+#
+# Exit Codes:
+#
+#
+# Version:	1.0.0
+#
+# Revision history:
+#
+#	1.0.0 15-October-2012 Initial Release <mosburn>
+#
+#=================================================================
+
+apt-get update
+apt-get upgrade
+
+if [ ! -d /opt/metasploit/msf3.old ]; then
+	mv /opt/metasploit/msf3 /opt/metasploit/msf3.old
+	svn co https://www.metasploit.com/svn/framework3/trunk/ msf3
+else
+	svn up /opt/metasploit/msf3
+fi 
+
+
