@@ -24,7 +24,7 @@
 #   Assumptions/ 
 #    Limitations:
 #
-#    Executing:  ./setup-python.osx.sh
+#    Executing:  ./py_earthship_calcs.py
 #
 #    Exit Codes:
 #		
